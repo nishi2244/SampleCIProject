@@ -13,7 +13,18 @@
 		0AD3D3B820B55F510090F957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3D3B720B55F510090F957 /* Assets.xcassets */; };
 		0AD3D3BB20B55F510090F957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3D3B920B55F510090F957 /* LaunchScreen.storyboard */; };
 		0AD3D3BE20B55F510090F957 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3D3BD20B55F510090F957 /* main.m */; };
+		0AD3D3CB20B561740090F957 /* SampleCIProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3D3CA20B561740090F957 /* SampleCIProjectTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AD3D3CD20B561750090F957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AD3D3A320B55F500090F957 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AD3D3AA20B55F510090F957;
+			remoteInfo = SampleCIProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0AD3D3AB20B55F510090F957 /* SampleCIProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCIProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,20 @@
 		0AD3D3BA20B55F510090F957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AD3D3BC20B55F510090F957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AD3D3BD20B55F510090F957 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AD3D3C820B561740090F957 /* SampleCIProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCIProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD3D3CA20B561740090F957 /* SampleCIProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleCIProjectTests.m; sourceTree = "<group>"; };
+		0AD3D3CC20B561740090F957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0AD3D3A820B55F510090F957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD3D3C520B561740090F957 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				0AD3D3AD20B55F510090F957 /* SampleCIProject */,
+				0AD3D3C920B561740090F957 /* SampleCIProjectTests */,
 				0AD3D3AC20B55F510090F957 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				0AD3D3AB20B55F510090F957 /* SampleCIProject.app */,
+				0AD3D3C820B561740090F957 /* SampleCIProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +92,15 @@
 				0AD3D3BD20B55F510090F957 /* main.m */,
 			);
 			path = SampleCIProject;
+			sourceTree = "<group>";
+		};
+		0AD3D3C920B561740090F957 /* SampleCIProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AD3D3CA20B561740090F957 /* SampleCIProjectTests.m */,
+				0AD3D3CC20B561740090F957 /* Info.plist */,
+			);
+			path = SampleCIProjectTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +123,24 @@
 			productReference = 0AD3D3AB20B55F510090F957 /* SampleCIProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0AD3D3C720B561740090F957 /* SampleCIProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AD3D3CF20B561750090F957 /* Build configuration list for PBXNativeTarget "SampleCIProjectTests" */;
+			buildPhases = (
+				0AD3D3C420B561740090F957 /* Sources */,
+				0AD3D3C520B561740090F957 /* Frameworks */,
+				0AD3D3C620B561740090F957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AD3D3CE20B561750090F957 /* PBXTargetDependency */,
+			);
+			name = SampleCIProjectTests;
+			productName = SampleCIProjectTests;
+			productReference = 0AD3D3C820B561740090F957 /* SampleCIProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -103,6 +153,11 @@
 					0AD3D3AA20B55F510090F957 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					0AD3D3C720B561740090F957 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0AD3D3AA20B55F510090F957;
 					};
 				};
 			};
@@ -120,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				0AD3D3AA20B55F510090F957 /* SampleCIProject */,
+				0AD3D3C720B561740090F957 /* SampleCIProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +188,13 @@
 				0AD3D3BB20B55F510090F957 /* LaunchScreen.storyboard in Resources */,
 				0AD3D3B820B55F510090F957 /* Assets.xcassets in Resources */,
 				0AD3D3B620B55F510090F957 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD3D3C620B561740090F957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +211,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AD3D3C420B561740090F957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD3D3CB20B561740090F957 /* SampleCIProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AD3D3CE20B561750090F957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AD3D3AA20B55F510090F957 /* SampleCIProject */;
+			targetProxy = 0AD3D3CD20B561750090F957 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0AD3D3B420B55F510090F957 /* Main.storyboard */ = {
@@ -302,6 +381,36 @@
 			};
 			name = Release;
 		};
+		0AD3D3D020B561750090F957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D57PZWU7LZ;
+				INFOPLIST_FILE = SampleCIProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaishishukatsu.SampleCIProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleCIProject.app/SampleCIProject";
+			};
+			name = Debug;
+		};
+		0AD3D3D120B561750090F957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D57PZWU7LZ;
+				INFOPLIST_FILE = SampleCIProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaishishukatsu.SampleCIProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleCIProject.app/SampleCIProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +428,15 @@
 			buildConfigurations = (
 				0AD3D3C220B55F510090F957 /* Debug */,
 				0AD3D3C320B55F510090F957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AD3D3CF20B561750090F957 /* Build configuration list for PBXNativeTarget "SampleCIProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD3D3D020B561750090F957 /* Debug */,
+				0AD3D3D120B561750090F957 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
